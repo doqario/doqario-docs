@@ -1,0 +1,10 @@
+  employees:
+    - id: "obsluga-paulina-n"
+      label: "Paulina N"
+      name: "Paulina Nowak"
+      description: "Pracownik obsługi sklepu"
+
+    - id: "marketing-dominika-n"
+      label: "Dominika N"
+      name: "Dominika Nowak"
+      description: "Pracownik sklepu z działu marketingu"

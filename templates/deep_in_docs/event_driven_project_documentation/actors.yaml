@@ -1,5 +1,5 @@
  actors:
     - id: "customer"
-      label: "customer"
-      name: "Klient"
+      label: "Klient"
+      name: "Klient sklepu"
       description: "Nasz dowolny klient"

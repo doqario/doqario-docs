@@ -1,12 +1,12 @@
 events:
-  - id: "event-przejscie-lista-kategorii"
-    name: "Otwarto strone listy kategorii"
+  - id: "event-otwarcie-kategorii"
+    name: "Otwarcie kategorii"
     actor: "customer"
     object:
       - "object-aplikacja"
-      - "object-lista-kategorii"
+      - "object-kategoria"
     description: | 
-      Klient przechodzi na stronę listy kategorii
+      Klient przechodzi na stronę kategorii.
 
   - id: "event-wejscie-karta-produktu"
     name: "Otwarto krate produktu klikając na konkretny produkt"
@@ -15,7 +15,7 @@ events:
       - "object-aplikacja"
       - "object-produkt-fizyczny"
     description: |
-      Klient otworzył karte produktu z konkretnym produktem
+      Klient otworzył karte produktu z konkretnym produktem.
 
   - id: "event-dodano-do-koszyka-produktu"
     name: "Dodano produkt do koszyka"
