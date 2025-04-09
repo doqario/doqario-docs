@@ -1,0 +1,6 @@
+systems:
+  - id: "www"
+    label: "www"
+    name: "Sklep internetowy"
+    description: |
+      Sklep internetowy oparty o wordpress

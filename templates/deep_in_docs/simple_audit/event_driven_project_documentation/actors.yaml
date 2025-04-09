@@ -1,0 +1,4 @@
+ actors:
+    customer:
+      name: "Klient"
+      description: "Nasz dowolny klient"

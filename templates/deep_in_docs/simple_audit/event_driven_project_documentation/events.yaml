@@ -1,0 +1,41 @@
+events:
+  - id: "event-przejscie-kategorie"
+    name: "Otwarto strone kategorii"
+    actor: "customer"
+    object:
+      - "object-aplikacja"
+      - "object-kategorie"
+    description: | 
+      Klient przechodzi na kategorie
+
+  - id: "event-wejscie-karta-produktu"
+    name: "Otwarto krate produktu klikając na konkretny produkt"
+    actor: "customer"
+    objects:
+      - "object-aplikacja"
+      - "object-produkt-fizyczny"
+    description: |
+      Klient otworzył karte produktu z konkretnym produktem
+
+  - id: "event-dodanie-do-koszyka-produktu"
+    name: "Dodano produkt do koszyka"
+    actor: "customer"
+    objects:
+      - "object-aplikacja"
+      - "object-produkt-fizyczny"
+      - "object-koszyk"
+    description: |
+      Klient dodaje produkt do koszyka
+
+  - id: "event-zwrocenie-aktualnego-koszyka"
+    name: "Zwrócono aktualny koszyk"
+    triggered_by: "event-dodanie-do-koszyka-produktu"
+    actor: "customer"
+    objects:
+      - "object-aplikacja"
+      - "object-koszyk"
+    description: |
+      Zdarzenie występuje tylko jeśli wcześniej wystąpiło: "Dodano produkt do koszyka".
+      Klient dodaje aktualny koszyk z przeliczoną ceną produktu.
+  
+  

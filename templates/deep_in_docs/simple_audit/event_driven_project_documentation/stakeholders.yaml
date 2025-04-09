@@ -1,0 +1,7 @@
+ stakeholders:
+    paulina:
+      name: "Paulina"
+      description: "obsługa sklepu"
+    dominika:
+      name: "Dominika"
+      description: "marketing"

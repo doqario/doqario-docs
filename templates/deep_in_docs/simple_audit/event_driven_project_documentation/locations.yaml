@@ -1,0 +1,4 @@
+locations:
+    serwer-aws:
+      systems: "wwww"
+      description: "Serwer AWS"
