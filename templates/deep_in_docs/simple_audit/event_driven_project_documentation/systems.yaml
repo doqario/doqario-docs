@@ -1,6 +1,6 @@
 systems:
   - id: "www"
-    label: "www"
+    label: "sklep"
     name: "Sklep internetowy"
     description: |
       Sklep internetowy oparty o wordpress

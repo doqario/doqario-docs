@@ -1,0 +1,10 @@
+  employees:
+    - id: "obsluga-paulina-t"
+      label: "Paulina T"
+      name: "Paulina Tynoszuk"
+      description: "Pracownik obsługi sklepu"
+
+    - id: "marketing-dominika-g"
+      label: "Dominika G"
+      name: "Dominika Gerbera"
+      description: "Pracownik sklepu z działu marketing"

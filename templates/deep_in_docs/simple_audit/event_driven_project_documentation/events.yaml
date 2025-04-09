@@ -1,12 +1,12 @@
 events:
-  - id: "event-przejscie-kategorie"
-    name: "Otwarto strone kategorii"
+  - id: "event-przejscie-lista-kategorii"
+    name: "Otwarto strone listy kategorii"
     actor: "customer"
     object:
       - "object-aplikacja"
-      - "object-kategorie"
+      - "object-lista-kategorii"
     description: | 
-      Klient przechodzi na kategorie
+      Klient przechodzi na stronę listy kategorii
 
   - id: "event-wejscie-karta-produktu"
     name: "Otwarto krate produktu klikając na konkretny produkt"
@@ -17,9 +17,10 @@ events:
     description: |
       Klient otworzył karte produktu z konkretnym produktem
 
-  - id: "event-dodanie-do-koszyka-produktu"
+  - id: "event-dodano-do-koszyka-produktu"
     name: "Dodano produkt do koszyka"
     actor: "customer"
+    triggers: "event-zwrocono-aktualnego-koszyka"
     objects:
       - "object-aplikacja"
       - "object-produkt-fizyczny"
@@ -27,9 +28,8 @@ events:
     description: |
       Klient dodaje produkt do koszyka
 
-  - id: "event-zwrocenie-aktualnego-koszyka"
+  - id: "event-zwrocono-aktualnego-koszyka"
     name: "Zwrócono aktualny koszyk"
-    triggered_by: "event-dodanie-do-koszyka-produktu"
     actor: "customer"
     objects:
       - "object-aplikacja"

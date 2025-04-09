@@ -2,9 +2,9 @@ objects:
   - id: "object-aplikacja"
     name: "Aplikacja Wordpress"
     systems: "www"
-    stakeholder: 
-      - "Paulina"
-      - "Dominika"
+    employees: 
+      - "obsluga-paulina-t"
+      - "marketing-dominika-g"
     events:
       - "event-dodanie-do-koszyka"
       - "event-wejscie-strona-glowna"
@@ -17,8 +17,8 @@ objects:
   - id: "object-produkt-fizyczny"
     name: "Produkt fizyczny"
     systems: "www"
-    stakeholder:
-      - "Paulina"
+    employees: 
+      - "obsluga-paulina-t"
     events:
       - "event-dodanie-do-koszyka"
       - "event-wejscie-karta-produktu"
@@ -30,22 +30,22 @@ objects:
   - id: "object-koszyk"
     name: koszyk
     systems: "www"
-    stakeholder: 
-      - "Paulina"
-      - "Dominika"
+    employees: 
+      - "obsluga-paulina-t"
+      - "marketing-dominika-g"
     events:
       - "event-dodanie-do-koszyka"
     description: |
       koszyk zakupowy na stronie internetowej/ w sklepie.
 
-  - id: "object-kategorie"
+  - id: "object-lista-kategorii"
     name: kategorie
     location: "www"
-    stakeholder: 
-      - "Paulina"
-      - "Dominika"
+    employees: 
+      - "obsluga-paulina-t"
+      - "marketing-dominika-g"
     events:
-      - "event-przejscie-kategorie"
+      - "event-przejscie-lista-kategorii"
     description: |
-      kategorie na stronie internetowej.
+      lista kategorii na stronie internetowej.
 
