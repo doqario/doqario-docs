@@ -9,16 +9,15 @@ objects:
       Zarządzany przez Mikołaja i firmę X.
     legacy:
       description: |
-        Sklep postawiony jest na WordPress. Nie integruje się z comarch. Wszystkie dane są wprowadzane ręcznie.
+        Sklep postawiony jest na WordPress. 
 
-  - id: "object-produkt-fizyczny"
-    name: "Produkt fizyczny"
+  - id: "object-produkt"
+    name: "Produkt"
     systems: "www"
     employees: 
       - "obsluga-paulina-n"
     description: |
-      Produkt fizyczny oferowany przez X.
-      Sprzedawane w sklepie internetowym oraz w fizycznych sklepach w ośrodkach.
+      Produkt sprzedawany w sklepie internetowym.
 
   - id: "object-koszyk"
     name: "Koszyk"
@@ -27,7 +26,7 @@ objects:
       - "obsluga-paulina-n"
       - "marketing-dominika-n"
     description: |
-      Koszyk zakupowy na stronie internetowej/ w sklepie.
+      Koszyk zakupowy na stronie internetowej.
 
   - id: "object-kategoria"
     name: "Kategoria"

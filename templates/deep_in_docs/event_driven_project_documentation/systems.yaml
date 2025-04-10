@@ -1,6 +1,8 @@
 systems:
   - id: "www"
-    label: "sklep"
+    label: "Sklep"
     name: "Sklep internetowy"
+    locations: 
+      - "serwer-aws"
     description: |
-      Sklep internetowy oparty o wordpress
+      Sklep internetowy oparty o Wordpress.

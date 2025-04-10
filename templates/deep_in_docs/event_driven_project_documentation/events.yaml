@@ -13,7 +13,7 @@ events:
     actor: "customer"
     objects:
       - "object-aplikacja"
-      - "object-produkt-fizyczny"
+      - "object-produkt"
     description: |
       Klient otworzył karte produktu z konkretnym produktem.
 
@@ -23,10 +23,10 @@ events:
     triggers: "event-zwrocono-aktualnego-koszyka"
     objects:
       - "object-aplikacja"
-      - "object-produkt-fizyczny"
+      - "object-produkt"
       - "object-koszyk"
     description: |
-      Klient dodaje produkt do koszyka
+      Klient dodaje produkt do koszyka.
 
   - id: "event-zwrocono-aktualnego-koszyka"
     name: "Zwrócono aktualny koszyk"

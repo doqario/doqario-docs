@@ -2,4 +2,4 @@
     - id: "customer"
       label: "Klient"
       name: "Klient sklepu"
-      description: "Nasz dowolny klient"
+      description: Nasz dowolny klient.

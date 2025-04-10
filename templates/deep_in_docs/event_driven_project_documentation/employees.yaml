@@ -2,9 +2,9 @@
     - id: "obsluga-paulina-n"
       label: "Paulina N"
       name: "Paulina Nowak"
-      description: "Pracownik obsługi sklepu"
+      description: Pracownik obsługi sklepu internetowego.
 
     - id: "marketing-dominika-n"
       label: "Dominika N"
       name: "Dominika Nowak"
-      description: "Pracownik sklepu z działu marketingu"
+      description: Pracownik sklepu z działu marketingu.

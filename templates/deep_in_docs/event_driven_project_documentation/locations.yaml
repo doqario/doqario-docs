@@ -1,5 +1,5 @@
 locations:
     - id: "serwer-aws"
-      label: "Serwer-aws"
-      systems: "wwww"
-      description: "Serwer AWS"
+      label: "AWS"
+      name: "Serwer AWS"
+      description: Serwer AWS to hosting strony internetowej.
