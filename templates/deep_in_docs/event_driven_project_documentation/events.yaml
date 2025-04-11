@@ -9,7 +9,7 @@ events:
       Klient przechodzi na stronę kategorii.
 
   - id: "event-wejscie-karta-produktu"
-    name: "Otwarto krate produktu klikając na konkretny produkt"
+    name: "Otwarto kartę produktu klikając na konkretny produkt"
     actor: "customer"
     objects:
       - "object-aplikacja"
