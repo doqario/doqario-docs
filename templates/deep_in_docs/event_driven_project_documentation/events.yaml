@@ -1,0 +1,42 @@
+events:
+  - id: "event-otwarcie-kategorii" #Type:Simple:String
+    name: "Otwarcie kategorii" #Type:Simple:String
+    actor: "customer" #Type:Dictionary ("actors" , ".")
+    objects: #Type:Dictionary ("objects" , ".")
+      - "object-aplikacja"
+      - "object-kategoria"
+    description: | #Type:Simple:LongString
+      Klient przechodzi na stronę kategorii.
+
+  - id: "event-wejscie-karta-produktu" #Type:Simple:String
+    name: "Otwarto kartę produktu klikając na konkretny produkt" #Type:Simple:String
+    actor: "customer" #Type:Dictionary ("actors" , ".")
+    objects: #Type:Dictionary ("objects" , ".")
+      - "object-aplikacja"
+      - "object-produkt"
+    description: | #Type:Simple:LongString
+      Klient otworzył karte produktu z konkretnym produktem.
+
+  - id: "event-dodano-do-koszyka-produktu" #Type:Simple:String
+    name: "Dodano produkt do koszyka" #Type:Simple:String
+    actor: "customer" #Type:Dictionary ("actors" , ".")
+    triggers: #Type:ArrayOf:Triggers
+      - "event-zwrocono-aktualnego-koszyka" 
+    objects: #Type:Dictionary ("objects" , ".")
+      - "object-aplikacja"
+      - "object-produkt"
+      - "object-koszyk"
+    description: | #Type:Simple:LongString
+      Klient dodaje produkt do koszyka.
+
+  - id: "event-zwrocono-aktualnego-koszyka" #Type:Simple:String
+    name: "Zwrócono aktualny koszyk" #Type:Simple:String
+    actor: "customer" #Type:Dictionary ("actors" , ".")
+    objects: #Type:Dictionary ("objects" , ".")
+      - "object-aplikacja"
+      - "object-koszyk"
+    description: | #Type:Simple:LongString
+      Zdarzenie występuje tylko jeśli wcześniej wystąpiło: "Dodano produkt do koszyka".
+      Klient dodaje aktualny koszyk z przeliczoną ceną produktu.
+  
+  
