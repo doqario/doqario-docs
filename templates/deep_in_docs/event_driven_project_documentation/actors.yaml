@@ -1,5 +1,5 @@
  actors:
-    - id: "customer"
-      label: "Klient"
-      name: "Klient sklepu"
-      description: Nasz dowolny klient.
+    - id: "customer" #Type:Simple:String
+      label: "Klient" #Type:Simple:String
+      name: "Klient sklepu" ##Type:Simple:String
+      description: Nasz dowolny klient. #Type:Simple:LongString

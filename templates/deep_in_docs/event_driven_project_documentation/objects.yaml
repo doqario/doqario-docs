@@ -1,39 +1,39 @@
 objects:
-  - id: "object-aplikacja"
-    name: "Aplikacja Wordpress"
-    systems: "www"
-    employees: 
+  - id: "object-aplikacja" #Type:Simple:String
+    name: "Aplikacja Wordpress" #Type:Simple:String
+    systems: "www" #Type:Dictionary ("systems" , ".")
+    employees: #Type:Dictionary ("empoloyees" , ".")
       - "obsluga-paulina-n"
       - "marketing-dominika-n"
-    description:
-      Zarządzany przez Mikołaja i firmę X.
-    legacy:
-      description: |
-        Sklep postawiony jest na WordPress. 
+    description: #Type:Simple:LongString
+      Zarządzany przez Mikołaja i firmę X.  
+    legacy: #Type:Object:Legacy
+      description: #Type:Simple:LongString
+        Sklep postawiony jest na WordPress.  
 
-  - id: "object-produkt"
-    name: "Produkt"
-    systems: "www"
-    employees: 
+  - id: "object-produkt" #Type:Simple:String
+    name: "Produkt" #Type:Simple:String
+    systems: "www" #Type:Dictionary ("systems" , ".")
+    employees: #Type:Dictionary ("empoloyees" , ".")
       - "obsluga-paulina-n"
-    description: |
+    description: | #Type:Simple:LongString
       Produkt sprzedawany w sklepie internetowym.
 
-  - id: "object-koszyk"
-    name: "Koszyk"
-    systems: "www"
-    employees: 
+  - id: "object-koszyk" #Type:Simple:String
+    name: "Koszyk" #Type:Simple:String
+    systems: "www" #Type:Dictionary ("systems" , ".")
+    employees: #Type:Dictionary ("empoloyees" , ".")
       - "obsluga-paulina-n"
       - "marketing-dominika-n"
-    description: |
+    description: | #Type:Simple:LongString
       Koszyk zakupowy na stronie internetowej.
 
-  - id: "object-kategoria"
-    name: "Kategoria"
-    location: "www"
-    employees: 
+  - id: "object-kategoria" #Type:Simple:String
+    name: "Kategoria" #Type:Simple:String
+    location: "www" #Type:Dictionary ("systems" , ".")
+    employees: #Type:Dictionary ("empoloyees" , ".")
       - "obsluga-paulina-n"
       - "marketing-dominika-n"
-    description: |
+    description: | #Type:Simple:LongString
       Kategoria na stronie internetowej.
 

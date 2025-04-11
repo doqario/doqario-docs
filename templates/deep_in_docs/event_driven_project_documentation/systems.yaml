@@ -1,8 +1,7 @@
 systems:
-  - id: "www"
-    label: "Sklep"
-    name: "Sklep internetowy"
-    locations: 
+  - id: "www" #Type:Simple:String
+    label: "Sklep" #Type:Simple:String
+    name: "Sklep internetowy" #Type:Simple:String
+    locations: #Type:Dictionary ("locations", ".")
       - "serwer-aws"
-    description: |
-      Sklep internetowy oparty o Wordpress.
+    description: Sklep internetowy oparty o Wordpress. #Type:Simple:LongString
