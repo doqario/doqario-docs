@@ -1,35 +1,20 @@
 // @ts-check
-// `@type` JSDoc annotations allow editor autocompletion and type checking
-// (when paired with `@ts-check`).
-// There are various equivalent ways to declare your Docusaurus config.
-// See: https://docusaurus.io/docs/api/docusaurus-config
-
-import {themes as prismThemes} from 'prism-react-renderer';
-
-// This runs in Node.js - Don't use client-side code here (browser APIs, JSX...)
+import { themes as prismThemes } from 'prism-react-renderer';
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
   title: 'Doqario',
   favicon: 'img/favicon.ico',
 
-  // Set the production url of your site here
   url: 'https://doqario.github.io',
-  // Set the /<baseUrl>/ pathname under which your site is served
-  // For GitHub pages deployment, it is often '/<projectName>/'
-  baseUrl: '/doqario-docs',
+  baseUrl: '/doqario-docs/', // <- UWAGA: dodałem brakujący '/' na końcu
 
-  // GitHub pages deployment config.
-  // If you aren't using GitHub pages, you don't need these.
-  organizationName: 'doqario', // Usually your GitHub org/user name.
-  projectName: 'doqario-docs', // Usually your repo name.
+  organizationName: 'doqario',
+  projectName: 'doqario-docs',
 
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
 
-  // Even if you don't use internationalization, you can use this field to set
-  // useful metadata like html lang. For example, if your site is Chinese, you
-  // may want to replace "en" with "zh-Hans".
   i18n: {
     defaultLocale: 'en',
     locales: ['en'],
@@ -42,10 +27,8 @@ const config = {
       ({
         docs: {
           sidebarPath: './sidebars.js',
-          // Please change this to your repo.
-          // Remove this to remove the "edit this page" links.
           editUrl:
-            'https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/',
+            'https://github.com/doqario/doqario-docs/edit/main/',
         },
         blog: {
           showReadingTime: true,
@@ -53,11 +36,8 @@ const config = {
             type: ['rss', 'atom'],
             xslt: true,
           },
-          // Please change this to your repo.
-          // Remove this to remove the "edit this page" links.
           editUrl:
-            'https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/',
-          // Useful options to enforce blogging best practices
+            'https://github.com/doqario/doqario-docs/edit/main/',
           onInlineTags: 'warn',
           onInlineAuthors: 'warn',
           onUntruncatedBlogPosts: 'warn',
@@ -72,12 +52,11 @@ const config = {
   themeConfig:
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({
-      // Replace with your project's social card
       image: 'img/docusaurus-social-card.jpg',
       navbar: {
         title: 'Doqario',
         logo: {
-          alt: 'DOQARIO',
+          alt: 'Doqario Logo',
           src: 'img/logo.svg',
         },
         items: [
@@ -87,7 +66,7 @@ const config = {
             position: 'left',
             label: 'Documentation',
           },
-          {to: '/blog', label: 'Blog', position: 'left'},
+          { to: '/blog', label: 'Blog', position: 'left' },
           {
             href: 'https://github.com/doqario/doqario-docs',
             label: 'GitHub',
@@ -101,32 +80,20 @@ const config = {
           {
             title: 'Docs',
             items: [
-              {
-                label: 'Documentation',
-                to: '/docs/doqario/rules',
-              },
+              { label: 'Documentation', to: '/docs/doqario/rules' },
             ],
           },
           {
             title: 'Community',
             items: [
-              {
-                label: 'Github',
-                href: 'https://github.com/doqario/doqario-docs',
-              },
+              { label: 'GitHub', href: 'https://github.com/doqario/doqario-docs' },
             ],
           },
           {
             title: 'More',
             items: [
-              {
-                label: 'Blog',
-                to: '/blog',
-              },
-              {
-                label: 'GitHub',
-                href: 'https://github.com/doqario/doqario-docs',
-              },
+              { label: 'Blog', to: '/blog' },
+              { label: 'GitHub', href: 'https://github.com/doqario/doqario-docs' },
             ],
           },
         ],
@@ -138,12 +105,12 @@ const config = {
       },
     }),
 
-    plugins: [require.resolve('docusaurus-lunr-search')],
-};
+  plugins: [require.resolve('docusaurus-lunr-search')],
 
-export default {
   markdown: {
     mermaid: true,
   },
   themes: ['@docusaurus/theme-mermaid'],
 };
+
+export default config;
