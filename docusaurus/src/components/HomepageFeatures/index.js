@@ -4,32 +4,29 @@ import styles from './styles.module.css';
 
 const FeatureList = [
   {
-    title: 'Easy to Use',
+    title: 'Blueprint-First Approach',
     Svg: require('@site/static/img/undraw_docusaurus_mountain.svg').default,
     description: (
       <>
-        Docusaurus was designed from the ground up to be easily installed and
-        used to get your website up and running quickly.
+        Project Blueprint lets you skip static documentation and start designing dynamic systems from day one. Create living documents that evolve with your teams.
       </>
     ),
   },
   {
-    title: 'Focus on What Matters',
+    title: 'Focus on Structure, Not Syntax',
     Svg: require('@site/static/img/undraw_docusaurus_tree.svg').default,
     description: (
       <>
-        Docusaurus lets you focus on your docs, and we&apos;ll do the chores. Go
-        ahead and move your docs into the <code>docs</code> directory.
+        Forget about formatting and scattered notes. With Doqario, you can focus on structuring knowledge while we automate consistency, validation, and compliance.
       </>
     ),
   },
   {
-    title: 'Powered by React',
+    title: ' AI-Driven and Future-Ready',
     Svg: require('@site/static/img/undraw_docusaurus_react.svg').default,
     description: (
       <>
-        Extend or customize your website layout by reusing React. Docusaurus can
-        be extended while reusing the same header and footer.
+        Extend your documentation into applications, workflows, and validations — all powered by AI. Doqario helps your internal knowledge scale as fast as your organization grows.
       </>
     ),
   },
