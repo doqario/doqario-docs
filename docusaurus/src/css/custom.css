@@ -85,5 +85,41 @@ button,
 }
 
 .footer a{
-  color: var(--ifm-font-color-base) !important;
+   color: var(--ifm-font-color-base) !important;
+}
+
+.hero--primary{
+  --ifm-color-primary: #182C59;
+}
+
+[data-theme='dark'] input#search_input_react {
+  background-color: var(--ifm-background-color);
+  color: var(--ifm-font-color-base);
+  border: 1px solid var(--ifm-color-primary-lighter);
+}
+
+[data-theme='dark'] input#search_input_react:focus {
+  border-color: var(--ifm-color-primary);
+  box-shadow: 0 0 0 2px var(--ifm-color-primary-lightest);
+}
+
+[data-theme='dark'] .searchResultItem {
+  border-bottom: 1px solid var(--ifm-color-primary-darkest);
+  transition: background-color 0.2s ease;
+}
+
+[data-theme='dark'] .searchResultItem:hover {
+  background-color: var(--ifm-color-primary-darkest);
+}
+
+[data-theme='dark'] .searchResultItem h2 {
+  color: var(--ifm-color-primary-light);
+}
+
+[data-theme='dark'] .searchResultItem p {
+  color: var(--ifm-font-color-base);
+}
+
+[data-theme='dark'] #search_no_result {
+  color: var(--ifm-color-info);
 }
