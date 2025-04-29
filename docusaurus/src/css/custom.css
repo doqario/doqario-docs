@@ -85,5 +85,38 @@ button,
 }
 
 .footer a{
-  color: var(--ifm-font-color-base) !important;
+   color: var(--ifm-font-color-base) !important;
+}
+
+.hero--primary{
+ --ifm-color-primary: #182C59;
+}
+
+.hero--primary:hover{
+  --ifm-color-primary: #2A4B8D;
+ }
+
+[data-theme='dark'] .searchResultItem {
+  border-bottom: 1px solid var(--ifm-color-primary-darkest);
+  transition: background-color 0.2s ease;
+}
+
+[data-theme='dark'] .searchResultItem:hover {
+  background-color: var(--ifm-color-primary-darkest);
+}
+
+[data-theme='dark'] .searchResultItem h2 {
+  color: var(--ifm-color-primary-light);
+}
+
+[data-theme='dark'] #search_no_result {
+  color: var(--ifm-font-color-base);
+}
+
+[data-theme='dark'] .searchResultItem p:not(:empty) {
+  color: var(--ifm-color-button-text);
+}
+
+[data-theme='dark'] .searchResultItem p {
+  color: var(--ifm-color-button-text) !important;
 }
