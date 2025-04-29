@@ -4,11 +4,11 @@ import Problem from './problem';
 import Solution from './solution';
 import Audience from './audience';
 import ProductSuite from './product_suite';
-import CompetitiveAdvantage from './CompetitiveAdvantage';
-import Traction from './Traction';
-import OwlMascot from './OwlMascot';
-import Future from './Future';
-import Contact from './Contact';
+import CompetitiveAdvantage from './competitive_advantage';
+import Traction from './traction';
+import OwlMascot from './owl_mascot';
+import Future from './future';
+import Contact from './contact';
 
 export default function LandingPage() {
   return (
