@@ -2,6 +2,7 @@
   "name": "docusaurus",
   "version": "0.0.0",
   "private": true,
+  "homepage": "https://doqario.github.io/doqario-docs/",
   "scripts": {
     "docusaurus": "docusaurus",
     "start": "docusaurus start",
@@ -26,7 +27,9 @@
   },
   "devDependencies": {
     "@docusaurus/module-type-aliases": "3.7.0",
-    "@docusaurus/types": "3.7.0"
+    "@docusaurus/types": "3.7.0",
+    "docusaurus": "^1.14.7",
+    "gh-pages": "^6.3.0"
   },
   "browserslist": {
     "production": [
