@@ -15,15 +15,15 @@ jobs:
           fetch-depth: 0
       - uses: actions/setup-node@v4
         with:
-          node-version: 18
-          cache: yarn
+        node-version: 18
+        cache: npm
 
       - name: Install dependencies
-        run: yarn install --frozen-lockfile
+        run: npm ci
         working-directory: docusaurus
 
       - name: Build website
-        run: yarn build
+        run: npm run build
         working-directory: docusaurus
 
       - name: Upload Build Artifact
@@ -44,7 +44,7 @@ jobs:
 
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/download-pages-artifact@v3  # <- brakowało!
+      - uses: actions/download-pages-artifact@v3 
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v4
