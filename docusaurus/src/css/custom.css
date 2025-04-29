@@ -105,10 +105,6 @@ button,
   color: var(--ifm-color-primary-light);
 }
 
-[data-theme='dark'] .searchResultItem p {
-  color: var(--ifm-font-color-base);
-}
-
 [data-theme='dark'] #search_no_result {
   color: var(--ifm-font-color-base);
 }
@@ -117,3 +113,6 @@ button,
   color: var(--ifm-color-button-text);
 }
 
+[data-theme='dark'] .searchResultItem p {
+  color: var(--ifm-color-button-text) !important;
+}
