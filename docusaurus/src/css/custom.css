@@ -53,8 +53,6 @@ button,
 .button--primary,
 .button--secondary,
 .button--lg {
-  /* background-color: var(--ifm-color-button-bg);
-  color: var(--ifm-color-button-text) !important; */
   border: none;
   padding: 0.5rem 1rem;
   border-radius: 0.375rem;
@@ -78,3 +76,14 @@ button,
   background-color: var(--ifm-color-button-hover);
 }
 
+.hero__title {
+  color: var(--ifm-font-color-base) !important;
+}
+
+.footer {
+  color: var(--ifm-font-color-base) !important;
+}
+
+.footer a{
+  color: var(--ifm-font-color-base) !important;
+}
