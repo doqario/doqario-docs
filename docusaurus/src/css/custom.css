@@ -92,17 +92,6 @@ button,
   --ifm-color-primary: #182C59;
 }
 
-/* [data-theme='dark'] input#search_input_react {
-  background-color: var(--ifm-background-color);
-  color: var(--ifm-font-color-base);
-  border: 1px solid var(--ifm-color-primary-lighter);
-}
-
-[data-theme='dark'] input#search_input_react:focus {
-  border-color: var(--ifm-color-primary);
-  box-shadow: 0 0 0 2px var(--ifm-color-primary-lightest);
-} */
-
 [data-theme='dark'] .searchResultItem {
   border-bottom: 1px solid var(--ifm-color-primary-darkest);
   transition: background-color 0.2s ease;
@@ -125,6 +114,6 @@ button,
 }
 
 [data-theme='dark'] .searchResultItem p:not(:empty) {
-  color: var(--ifm-font-color-base);
+  color: var(--ifm-color-button-text);
 }
 
