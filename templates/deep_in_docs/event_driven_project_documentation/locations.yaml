@@ -1,5 +1,0 @@
-locations:
-    - id: "serwer-aws" #Type:Simple:String
-      label: "AWS" #Type:Simple:String
-      name: "Serwer AWS" #Type:Simple:String
-      description: Serwer AWS to hosting strony internetowej. #Type:Simple:LongString
