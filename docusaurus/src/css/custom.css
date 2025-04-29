@@ -92,7 +92,7 @@ button,
   --ifm-color-primary: #182C59;
 }
 
-[data-theme='dark'] input#search_input_react {
+/* [data-theme='dark'] input#search_input_react {
   background-color: var(--ifm-background-color);
   color: var(--ifm-font-color-base);
   border: 1px solid var(--ifm-color-primary-lighter);
@@ -101,7 +101,7 @@ button,
 [data-theme='dark'] input#search_input_react:focus {
   border-color: var(--ifm-color-primary);
   box-shadow: 0 0 0 2px var(--ifm-color-primary-lightest);
-}
+} */
 
 [data-theme='dark'] .searchResultItem {
   border-bottom: 1px solid var(--ifm-color-primary-darkest);
@@ -121,5 +121,10 @@ button,
 }
 
 [data-theme='dark'] #search_no_result {
-  color: var(--ifm-color-info);
+  color: var(--ifm-font-color-base);
 }
+
+[data-theme='dark'] .searchResultItem p:not(:empty) {
+  color: var(--ifm-font-color-base);
+}
+
