@@ -44,6 +44,7 @@ jobs:
 
     runs-on: ubuntu-latest
     steps:
+      - uses: actions/download-pages-artifact@v3  # <- brakowało!
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v4
