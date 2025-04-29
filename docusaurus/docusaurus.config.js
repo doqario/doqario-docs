@@ -141,4 +141,9 @@ const config = {
     plugins: [require.resolve('docusaurus-lunr-search')],
 };
 
-export default config;
+export default {
+  markdown: {
+    mermaid: true,
+  },
+  themes: ['@docusaurus/theme-mermaid'],
+};
