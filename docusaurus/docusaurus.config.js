@@ -11,6 +11,8 @@ const config = {
 
   organizationName: 'doqario',
   projectName: 'doqario-docs',
+  deploymentBranch: 'gh-pages',
+  trailingSlash: false,
 
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
