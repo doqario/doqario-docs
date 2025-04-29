@@ -1,0 +1,6 @@
+{
+  "dependencies": {
+    "docusaurus-lunr-search": "^3.6.0",
+    "lunr": "^2.3.9"
+  }
+}
