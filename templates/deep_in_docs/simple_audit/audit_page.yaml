@@ -1,0 +1,36 @@
+audit_page: #Type:Object:AuditPage
+  status: #Type:StatusObject
+    dtp: 1 #Type:Simple:Int
+  id: 123456 #Type:Simple:Int
+  metadata: #Type:Object:Metadata
+    title: "String" #Type:Simple:String
+    subtitle: "String" #Type:Simple:String
+    type: "audit_page" #Type:Simple:String
+  businessId: "String" #Type:Simple:String
+  description: #Type:Object:Section
+    content: | #Type:Simple:LongString
+      Long string
+  scope: #Type:Object:Section
+    content: "Long string" #Type:Simple:LongString
+  meetings: #Type:ArrayOf:Meeting
+    - date: "2024-01-01" #Type:Date(yyyy-mm-dd)
+      customer_team: #Type:ArrayOf:String
+        - "Person A"
+      our_team: #Type:ArrayOf:String
+        - "Person B"
+  methodology_details: #Type:Object:Section
+    content: "Long string" #Type:Simple:LongString
+  current_state: #Type:Object:Section
+    content: "Long string" #Type:Simple:LongString
+  risks_suggestions: #Type:ArrayOf:RiskSuggestion
+    - id: 1 #Type:Simple:Int
+      risk: "String" #Type:Simple:String
+      description: "Long string" #Type:Simple:LongString
+      category: "String" #Type:Select[]
+      priority: "String" #Type:Select
+      solutions: #Type:ArrayOf:Solution
+        - id: "1.1" #Type:Simple:String
+          complexity: "String" #Type:Select
+          description: "Long string" #Type:Simple:LongString
+  summary: #Type:Object:Section
+    content: "Long string" #Type:Simple:LongString
