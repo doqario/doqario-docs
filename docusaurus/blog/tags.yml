@@ -8,12 +8,7 @@ hello:
   permalink: /hello
   description: Hello tag description
 
-docusaurus:
-  label: Docusaurus
-  permalink: /docusaurus
-  description: Docusaurus tag description
-
-hola:
-  label: Hola
-  permalink: /hola
-  description: Hola tag description
+doqario:
+  label: Doqario
+  permalink: /doqario
+  description: Doqario tag description
