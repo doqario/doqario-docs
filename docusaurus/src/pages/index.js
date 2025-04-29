@@ -22,7 +22,7 @@ function HomepageHeader() {
         <p className="hero__subtitle">{siteConfig.tagline}</p>
         <div className={styles.buttons}>
           <Link
-            className="button button--secondary button--lg"
+            className="button button--secondary button--lg button--cta"
             to="/docs/doqario/rules">
             Start Your Journey
           </Link>
@@ -43,9 +43,9 @@ export default function Home() {
     >
       <HomepageHeader />
       <div className={styles.page}>
-        <aside className={styles.toc}>
+        {/* <aside className={styles.toc}>
           <TOC toc={toc} />
-        </aside>
+        </aside> */}
         <main className={styles.container}>
           <HomepageFeatures />
           <MDXWrapper>
