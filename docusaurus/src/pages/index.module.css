@@ -21,3 +21,19 @@
   align-items: center;
   justify-content: center;
 }
+
+.page {
+  display: flex;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+.toc {
+  flex: 0 0 250px;
+  padding-right: 2rem;
+}
+
+.content {
+  flex: 1;
+}
