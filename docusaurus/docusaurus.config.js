@@ -7,7 +7,7 @@ const config = {
   favicon: 'img/favicon.ico',
 
   url: 'https://doqario.github.io',
-  baseUrl: '/doqario-docs/', // <- UWAGA: dodałem brakujący '/' na końcu
+  baseUrl: '/doqario-docs/', 
 
   organizationName: 'doqario',
   projectName: 'doqario-docs',
