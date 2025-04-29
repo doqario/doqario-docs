@@ -89,8 +89,12 @@ button,
 }
 
 .hero--primary{
-  --ifm-color-primary: #182C59;
+ --ifm-color-primary: #182C59;
 }
+
+.hero--primary:hover{
+  --ifm-color-primary: #2A4B8D;
+ }
 
 [data-theme='dark'] .searchResultItem {
   border-bottom: 1px solid var(--ifm-color-primary-darkest);
