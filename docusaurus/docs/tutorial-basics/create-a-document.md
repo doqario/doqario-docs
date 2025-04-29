@@ -4,6 +4,8 @@ sidebar_position: 2
 
 # Create a Document
 
+asd blabala
+
 Documents are **groups of pages** connected through:
 
 - a **sidebar**
