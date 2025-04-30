@@ -4,7 +4,7 @@ import { themes as prismThemes } from 'prism-react-renderer';
 /** @type {import('@docusaurus/types').Config} */
 const config = {
   title: 'Doqario',
-  favicon: 'img/favicon.ico',
+  favicon: 'img/favicon-doqario.ico',
 
   url: 'https://doqario.github.io',
   baseUrl: '/doqario-docs/', 
@@ -59,12 +59,20 @@ const config = {
         disableSwitch: true,
         respectPrefersColorScheme: false,
       },
-      // image: '',
+      metadata: [
+        { name: 'description', content: 'Doqario -  Don’t write docs — design your system. Doqario is the missing layer between thought and implementation.' },
+        { name: 'keywords', content: 'doqario, documentation, knowledge, AI, blueprint, docartio' },
+        { name: 'author', content: 'Doqario' },
+        { property: 'og:title', content: 'Doqario' },
+        { property: 'og:description', content: 'Doqario -  Don’t write docs — design your system. Doqario is the missing layer between thought and implementation.'},
+        { property: 'og:url', content: 'https://doqario.github.io/doqario-docs/' },
+      ],      
+      image: 'img/logo-doqario.svg',
       navbar: {
         title: 'Doqario',
         logo: {
           alt: 'Doqario Logo',
-          src: 'img/logo.svg',
+          src: 'img/logo-doqario.svg',
         },
         items: [
           {
