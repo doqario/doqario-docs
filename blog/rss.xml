@@ -9,21 +9,13 @@
         <generator>https://github.com/jpmonette/feed</generator>
         <language>en</language>
         <item>
-            <title><![CDATA[First Blog Post]]></title>
-            <link>https://doqario.github.io/doqario-docs/blog/first-blog-post</link>
-            <guid>https://doqario.github.io/doqario-docs/blog/first-blog-post</guid>
-            <pubDate>Tue, 29 Apr 2025 00:00:00 GMT</pubDate>
-            <description><![CDATA[Lorem ipsum dolor sit amet...]]></description>
-            <content:encoded><![CDATA[<p>Lorem ipsum dolor sit amet...</p>
-<p>...consectetur adipiscing elit. Pellentesque elementum dignissim ultricies. Fusce rhoncus ipsum tempor eros aliquam consequat. Lorem ipsum dolor sit amet</p>]]></content:encoded>
-            <category>hola</category>
-        </item>
-        <item>
             <title><![CDATA[Welcome]]></title>
             <link>https://doqario.github.io/doqario-docs/blog/welcome</link>
             <guid>https://doqario.github.io/doqario-docs/blog/welcome</guid>
-            <pubDate>Thu, 26 Aug 2021 00:00:00 GMT</pubDate>
-            <category>Facebook</category>
+            <pubDate>Tue, 29 Apr 2025 00:00:00 GMT</pubDate>
+            <description><![CDATA[Hey there! Welcome to Doqario!]]></description>
+            <content:encoded><![CDATA[<p>Hey there! Welcome to Doqario!
+More information coming soon...</p>]]></content:encoded>
             <category>Hello</category>
         </item>
     </channel>

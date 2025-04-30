@@ -6,35 +6,19 @@
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://doqario.github.io/doqario-docs/blog"/>
     <subtitle>Doqario Blog</subtitle>
-    <icon>https://doqario.github.io/doqario-docs/img/favicon.ico</icon>
-    <entry>
-        <title type="html"><![CDATA[First Blog Post]]></title>
-        <id>https://doqario.github.io/doqario-docs/blog/first-blog-post</id>
-        <link href="https://doqario.github.io/doqario-docs/blog/first-blog-post"/>
-        <updated>2025-04-29T00:00:00.000Z</updated>
-        <summary type="html"><![CDATA[Lorem ipsum dolor sit amet...]]></summary>
-        <content type="html"><![CDATA[<p>Lorem ipsum dolor sit amet...</p>
-<p>...consectetur adipiscing elit. Pellentesque elementum dignissim ultricies. Fusce rhoncus ipsum tempor eros aliquam consequat. Lorem ipsum dolor sit amet</p>]]></content>
-        <author>
-            <name>Adrian Chojnicki</name>
-            <uri>https://github.com/choinek</uri>
-        </author>
-        <category label="hola" term="hola"/>
-    </entry>
+    <icon>https://doqario.github.io/doqario-docs/img/favicon-doqario.ico</icon>
     <entry>
         <title type="html"><![CDATA[Welcome]]></title>
         <id>https://doqario.github.io/doqario-docs/blog/welcome</id>
         <link href="https://doqario.github.io/doqario-docs/blog/welcome"/>
-        <updated>2021-08-26T00:00:00.000Z</updated>
+        <updated>2025-04-29T00:00:00.000Z</updated>
+        <summary type="html"><![CDATA[Hey there! Welcome to Doqario!]]></summary>
+        <content type="html"><![CDATA[<p>Hey there! Welcome to Doqario!
+More information coming soon...</p>]]></content>
         <author>
             <name>Adrian Chojnicki</name>
             <uri>https://github.com/choinek</uri>
         </author>
-        <author>
-            <name>Paulina Tymoszuk</name>
-            <uri>https://github.com/paulina-tymoszuk</uri>
-        </author>
-        <category label="Facebook" term="Facebook"/>
         <category label="Hello" term="Hello"/>
     </entry>
 </feed>

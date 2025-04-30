@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkdocusaurus=self.webpackChunkdocusaurus||[]).push([[8782],{1228:s=>{s.exports=JSON.parse('{"tags":[{"label":"Hello","permalink":"/doqario-docs/blog/tags/hello","description":"Hello tag description","count":1}]}')}}]);
