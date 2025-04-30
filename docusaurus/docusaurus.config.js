@@ -54,7 +54,12 @@ const config = {
   themeConfig:
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({
-      image: 'img/docusaurus-social-card.jpg',
+      colorMode: {
+        defaultMode: 'dark',
+        disableSwitch: true,
+        respectPrefersColorScheme: false,
+      },
+      // image: '',
       navbar: {
         title: 'Doqario',
         logo: {
@@ -95,7 +100,6 @@ const config = {
             title: 'More',
             items: [
               { label: 'Blog', to: '/blog' },
-              { label: 'GitHub', href: 'https://github.com/doqario/doqario-docs' },
             ],
           },
         ],
