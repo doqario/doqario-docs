@@ -16,7 +16,7 @@
   --ifm-code-font-size: 95%;
   --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.05);
 
-  --ifm-color-button-bg: #E63946;
+  --ifm-color-button-bg: #DC2626;
   --ifm-color-button-hover: #cc2f3b;
   --ifm-color-button-text: #ffffff;
   --ifm-footer-color: #f1f1f1;
@@ -36,11 +36,11 @@
   --ifm-font-color-base: #F2F4F8;
   --ifm-color-secondary: #1D7D81;
   --ifm-color-info: #4DEEEA;
-  --ifm-color-cta: #E63946;
+  --ifm-color-cta: #DC2626;
 
   --docusaurus-highlighted-code-line-bg: rgba(255, 255, 255, 0.1);
 
-  --ifm-color-button-bg: #E63946;
+  --ifm-color-button-bg: #DC2626;
   --ifm-color-button-hover: #cc2f3b;
   --ifm-color-button-text: #ffffff;
   --ifm-footer-color: #f1f1f1;
