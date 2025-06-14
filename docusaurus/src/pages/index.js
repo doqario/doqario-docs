@@ -58,7 +58,7 @@ export default function Home() {
         />
         <meta
           property="og:image"
-          content="https://doqario.github.io/doqario-docs/img/logo-doqario.svg"
+          content="https://docs.doqario.com/img/logo-doqario.svg"
         />
       </Head>
       <Layout
