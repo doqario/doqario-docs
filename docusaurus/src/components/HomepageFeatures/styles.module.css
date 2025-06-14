@@ -1,12 +1,80 @@
 .features {
+  padding: 4rem 2rem;
+}
+
+.featureCard {
+  background: rgba(255, 255, 255, 0.6);
+  border-radius: 20px;
+  padding: 2rem;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  border: 1px solid rgba(125, 249, 255, 0.2);
+  backdrop-filter: blur(10px);
+  height: 100%;
   display: flex;
-  align-items: center;
-  padding: 2rem 0;
-  width: 100%;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
+[data-theme='dark'] .featureCard {
+  background: rgba(45, 55, 72, 0.6);
+  border: 1px solid rgba(125, 249, 255, 0.2);
+}
+
+.featureCard:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 20px 40px rgba(125, 249, 255, 0.15);
+  border-color: var(--electric-blue);
+}
+
+.featureTitle {
+  font-size: 1.5rem !important;
+  font-weight: 600 !important;
+  color: var(--ifm-color-button-text) !important;
+  margin-bottom: 1rem !important;
+  text-align: center;
+}
+
+.featureDescription {
+  color: var(--ifm-color-button-text) !important;
+  font-size: 1rem !important;
+  line-height: 1.6 !important;
+  text-align: center;
+  margin: 0;
+}
+
+/* Remove old SVG styles if they exist */
 .featureSvg {
-  height: 200px;
-  width: 200px;
+  display: none;
 }
 
+/* Responsive adjustments */
+@media (max-width: 996px) {
+  .features {
+    padding: 3rem 1rem;
+  }
+  
+  .featureCard {
+    margin-bottom: 2rem;
+    padding: 1.5rem;
+  }
+  
+  .featureTitle {
+    font-size: 1.25rem !important;
+  }
+  
+  .featureDescription {
+    font-size: 1rem !important;
+  }
+}
+
+@media (max-width: 768px) {
+  .features {
+    padding: 2rem 1rem;
+  }
+  
+  /* Stack features vertically on mobile */
+  .features .col {
+    max-width: 100% !important;
+    flex: 0 0 100% !important;
+  }
+}

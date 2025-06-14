@@ -14,29 +14,35 @@ import Head from '@docusaurus/Head';
 function HomepageHeader() {
   const { siteConfig } = useDocusaurusContext();
   return (
-    <header className={clsx('hero hero--primary', styles.heroBanner)}>
-      <div className="container">
-        <Heading as="h1" className="hero__title">
-          {siteConfig.title}
-        </Heading>
-        <p className="hero__subtitle">{siteConfig.tagline}</p>
-        <div className={styles.buttons}>
-          <Link
-            className="button button--secondary button--lg button--cta"
+    <div className="hero-section">
+      <div className="hero-content">
+        <h1 className="hero-title">Transforming Documentation into Actionable Systems</h1>
+        <p className="hero-subtitle">
+          Replace outdated documentation with living blueprints of how your systems, people, and processes work — and evolve.
+        </p>
+        <div className="hero-actions">
+          <Link 
+            className="button button--primary button--lg hero-cta"
             to="/docs/doqario/rules"
           >
-            Start Your Journey
+            Get Started
+          </Link>
+          <Link 
+            className="button button--outline button--lg hero-secondary"
+            to="/docs/examples"
+          >
+            Learn More
           </Link>
         </div>
       </div>
-    </header>
+    </div>
   );
 }
 
 export default function Home() {
   const { siteConfig } = useDocusaurusContext();
   const toc = MDXContent.toc || [];
-
+  
   return (
     <>
       <Head>
@@ -55,16 +61,12 @@ export default function Home() {
           content="https://doqario.github.io/doqario-docs/img/logo-doqario.svg"
         />
       </Head>
-
       <Layout
         title="Doqario — Blueprint-first documentation for future-ready teams"
         description="Replace static documentation with living, executable blueprints that scale with your systems."
       >
         <HomepageHeader />
         <div className={styles.page}>
-          {/* <aside className={styles.toc}>
-            <TOC toc={toc} />
-          </aside> */}
           <main className={styles.container}>
             <HomepageFeatures />
             <MDXWrapper>
