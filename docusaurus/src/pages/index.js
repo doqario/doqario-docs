@@ -23,13 +23,13 @@ function HomepageHeader() {
         <div className="hero-actions">
           <Link 
             className="button button--primary button--lg hero-cta"
-            to="/docs/doqario/rules"
+            to=""
           >
             Get Started
           </Link>
           <Link 
             className="button button--outline button--lg hero-secondary"
-            to="/docs/examples"
+            to=""
           >
             Learn More
           </Link>

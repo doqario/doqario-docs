@@ -148,3 +148,7 @@
     font-size: 1.125rem !important;
   }
 }
+
+.logo-colored {
+  color: var(--ifm-color-button-bg); /* #DC2626 */
+}
