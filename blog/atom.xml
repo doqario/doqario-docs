@@ -6,7 +6,7 @@
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://doqario.github.io/doqario-docs/blog"/>
     <subtitle>Doqario Blog</subtitle>
-    <icon>https://doqario.github.io/doqario-docs/img/favicon-doqario.ico</icon>
+    <icon>https://doqario.github.io/doqario-docs/img/logo-doqario.svg</icon>
     <entry>
         <title type="html"><![CDATA[Welcome]]></title>
         <id>https://doqario.github.io/doqario-docs/blog/welcome</id>
