@@ -1,39 +1,154 @@
-/**
- * CSS files with the .module.css suffix will be treated as CSS modules
- * and scoped locally.
- */
-
+/* Remove or comment out the old hero styles */
 .heroBanner {
-  padding: 4rem 0;
-  text-align: center;
-  position: relative;
-  overflow: hidden;
+  display: none; /* Hide the old hero banner */
 }
 
-@media screen and (max-width: 996px) {
-  .heroBanner {
-    padding: 2rem;
-  }
+.page {
+  display: block;
+  width: 100%;
+}
+
+.container {
+  max-width: 100%;
+  margin: 0;
+  padding: 0;
 }
 
 .buttons {
   display: flex;
   align-items: center;
   justify-content: center;
+  gap: 1rem;
+  flex-wrap: wrap;
 }
 
-.page {
-  display: flex;
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 2rem;
-}
-
+/* Ensure compatibility with existing styles */
 .toc {
-  flex: 0 0 250px;
-  padding-right: 2rem;
+  display: none;
 }
 
-.content {
-  flex: 1;
+/* Override any conflicting Docusaurus styles */
+:global(.hero-section) {
+  padding: 8rem 2rem 6rem !important;
+  text-align: center !important;
+  position: relative !important;
+  overflow: hidden !important;
+}
+
+:global(.hero-content) {
+  max-width: 800px !important;
+  margin: 0 auto !important;
+  position: relative !important;
+  z-index: 1 !important;
+}
+
+:global(.hero-title) {
+  font-size: 3.5rem !important;
+  font-weight: 700 !important;
+  color: var(--ifm-font-color-base) !important;
+  margin-bottom: 1.5rem !important;
+  letter-spacing: -0.02em !important;
+  line-height: 1.1 !important;
+}
+
+:global(.hero-subtitle) {
+  font-size: 1.375rem !important;
+  color: var(--ifm-color-button-text) !important;
+  margin-bottom: 3rem !important;
+  line-height: 1.6 !important;
+  font-weight: 400 !important;
+}
+
+:global(.hero-actions) {
+  display: flex !important;
+  gap: 1rem !important;
+  justify-content: center !important;
+  flex-wrap: wrap !important;
+}
+
+:global(.hero-cta) {
+  background: var(--ifm-color-cta) !important;
+  color: white !important;
+  padding: 1rem 1.5rem !important;
+  font-size: 1.125rem !important;
+  border-radius: 12px !important;
+  text-decoration: none !important;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1) !important;
+  box-shadow: 0 4px 14px rgba(220, 38, 38, 0.3) !important;
+  border: none !important;
+  text-align: center !important;
+  display: inline-block !important;
+}
+
+:global(.hero-cta:hover) {
+  background: var(--ifm-color-button-hover) !important;
+  transform: translateY(-2px) !important;
+  box-shadow: 0 8px 25px rgba(220, 38, 38, 0.4) !important;
+  color: white !important;
+}
+
+:global(.hero-secondary) {
+  background: transparent !important;
+  color: var(--ifm-color-button-text) !important;
+  border: 2px solid var(--electric-blue) !important;
+  padding: 1rem 1.5rem !important;
+  font-size: 1.125rem !important;
+  border-radius: 12px !important;
+  text-decoration: none !important;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1) !important;
+  text-align: center !important;
+  display: inline-block !important;
+}
+
+:global(.hero-secondary:hover) {
+  background: var(--ifm-background-color) !important;
+  color: var(--ifm-font-color-base) !important;
+  transform: translateY(-2px) !important;
+  box-shadow: 0 8px 25px rgba(125, 249, 255, 0.3) !important;
+}
+
+/* Responsive adjustments */
+@media (max-width: 996px) {
+  :global(.hero-title) {
+    font-size: 2.5rem !important;
+  }
+  
+  :global(.hero-subtitle) {
+    font-size: 1.25rem !important;
+  }
+  
+  :global(.hero-actions) {
+    flex-direction: column !important;
+    align-items: center !important;
+  }
+  
+  :global(.hero-cta),
+  :global(.hero-secondary) {
+    width: auto !important;
+    min-width: 180px !important;
+  }
+}
+
+@media (max-width: 768px) {
+  :global(.hero-section) {
+    padding: 4rem 1rem 3rem !important;
+  }
+  
+  :global(.hero-title) {
+    font-size: 2rem !important;
+  }
+}
+
+@media (max-width: 480px) {
+  :global(.hero-title) {
+    font-size: 1.75rem !important;
+  }
+  
+  :global(.hero-subtitle) {
+    font-size: 1.125rem !important;
+  }
+}
+
+.logo-colored {
+  color: var(--ifm-color-button-bg); /* #DC2626 */
 }

@@ -4,7 +4,7 @@ import { themes as prismThemes } from 'prism-react-renderer';
 /** @type {import('@docusaurus/types').Config} */
 const config = {
   title: 'Doqario',
-  favicon: 'img/favicon-doqario.ico',
+  favicon: 'img/logo-doqario.svg',
 
   url: 'https://doqario.github.io',
   baseUrl: '/doqario-docs/', 

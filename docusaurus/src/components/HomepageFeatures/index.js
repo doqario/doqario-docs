@@ -5,7 +5,6 @@ import styles from './styles.module.css';
 const FeatureList = [
   {
     title: 'Blueprint-First Approach',
-    // Svg: require('@site/static/img/undraw_docusaurus_mountain.svg').default,
     description: (
       <>
         Project Blueprint lets you skip static documentation and start designing dynamic systems from day one. Create living documents that evolve with your teams.
@@ -14,7 +13,6 @@ const FeatureList = [
   },
   {
     title: 'Focus on Structure, Not Syntax',
-    // Svg: require('@site/static/img/undraw_docusaurus_tree.svg').default,
     description: (
       <>
         Forget about formatting and scattered notes. With Doqario, you can focus on structuring knowledge while we automate consistency, validation, and compliance.
@@ -22,8 +20,7 @@ const FeatureList = [
     ),
   },
   {
-    title: ' AI-Driven and Future-Ready',
-    // Svg: require('@site/static/img/undraw_docusaurus_react.svg').default,
+    title: 'AI-Driven and Future-Ready',
     description: (
       <>
         Extend your documentation into applications, workflows, and validations — all powered by AI. Doqario helps your internal knowledge scale as fast as your organization grows.
@@ -32,15 +29,14 @@ const FeatureList = [
   },
 ];
 
-function Feature({Svg, title, description}) {
+function Feature({title, description}) {
   return (
     <div className={clsx('col col--4')}>
-      <div className="text--center">
-        {/* <Svg className={styles.featureSvg} role="img" /> */}
-      </div>
       <div className="text--center padding-horiz--md">
-        <Heading as="h3">{title}</Heading>
-        <p>{description}</p>
+        <div className={styles.featureCard}>
+          <Heading as="h3" className={styles.featureTitle}>{title}</Heading>
+          <p className={styles.featureDescription}>{description}</p>
+        </div>
       </div>
     </div>
   );
