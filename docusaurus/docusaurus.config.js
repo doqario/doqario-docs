@@ -7,7 +7,7 @@ const config = {
   favicon: '/img/logo-doqario.svg',
 
   url: 'https://docs.doqario.com',
-  baseUrl: '', 
+  baseUrl: '/', 
 
   organizationName: 'doqario',
   projectName: 'doqario-docs',
