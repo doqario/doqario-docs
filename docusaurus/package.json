@@ -2,7 +2,7 @@
   "name": "docusaurus",
   "version": "0.0.0",
   "private": true,
-  "homepage": "https://docs.doqario.com/",
+  "homepage": "https://docs.doqario.com",
   "scripts": {
     "docusaurus": "docusaurus",
     "start": "docusaurus start",

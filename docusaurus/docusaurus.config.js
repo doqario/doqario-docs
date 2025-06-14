@@ -6,7 +6,7 @@ const config = {
   title: 'Doqario',
   favicon: '/img/logo-doqario.svg',
 
-  url: 'https://docs.doqario.com/',
+  url: 'https://docs.doqario.com',
   baseUrl: '', 
 
   organizationName: 'doqario',
@@ -65,7 +65,7 @@ const config = {
         { name: 'author', content: 'Doqario' },
         { property: 'og:title', content: 'Doqario' },
         { property: 'og:description', content: 'Doqario -  Don’t write docs — design your system. Doqario is the missing layer between thought and implementation.'},
-        { property: 'og:url', content: 'https://docs.doqario.com/' },
+        { property: 'og:url', content: 'https://docs.doqario.com' },
       ],      
       image: '/img/logo-doqario.svg',
       navbar: {
