@@ -90,7 +90,7 @@
 :global(.hero-secondary) {
   background: transparent !important;
   color: var(--ifm-color-button-text) !important;
-  border: 2px solid var(--electric-blue) !important;
+  border: 2px solid var(--ifm-color-primary) !important;
   padding: 1rem 1.5rem !important;
   font-size: 1.125rem !important;
   border-radius: 12px !important;

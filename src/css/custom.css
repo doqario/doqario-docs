@@ -6,7 +6,7 @@
   --ifm-color-primary-light: #3D5EA0;
   --ifm-color-primary-lighter: #5776B0;
   --ifm-color-primary-lightest: #8A9ED0;
-  --ifm-color-secondary: #7DF9FF;
+  --ifm-color-secondary: #DC2626;
   --ifm-color-info: #4DEEEA;
   --ifm-background-color: #F2F4F8;
   --ifm-font-color-base: #2D3748;
@@ -18,18 +18,18 @@
   --ifm-footer-color: #f1f1f1;
   --ifm-footer-hover: #ffffff;
   --ifm-color-cta: #DC2626;
-  --electric-blue: #7DF9FF;
   --ai-glow: #4DEEEA;
 }
 
 [data-theme='dark'] {
-  --ifm-color-primary: #2A4B8D;
-  --ifm-color-primary-dark: #34D4D0;
-  --ifm-color-primary-darker: #2EC2BD;
-  --ifm-color-primary-darkest: #25A09A;
-  --ifm-color-primary-light: #6FF1ED;
-  --ifm-color-primary-lighter: #8EF5F2;
-  --ifm-color-primary-lightest: #C5FAF9;
+
+  --ifm-color-primary: #7df9ff;
+  --ifm-color-primary-dark: #57f7ff;
+  --ifm-color-primary-darker: #44f6ff;
+  --ifm-color-primary-darkest: #0bf4ff;
+  --ifm-color-primary-light: #a3fbff;
+  --ifm-color-primary-lighter: #b6fcff;
+  --ifm-color-primary-lightest: #effeff;
   --ifm-background-color: #2D3748;
   --ifm-font-color-base: #F2F4F8;
   --ifm-color-secondary: #7DF9FF;
@@ -39,11 +39,21 @@
   --ifm-color-button-bg: #DC2626;
   --ifm-color-button-hover: #cc2f3b;
   --ifm-color-button-text: #ffffff;
+  --ifm-background-color-bt:  #2A4B8D;
   --ifm-footer-color: #f1f1f1;
   --ifm-footer-hover: #ffffff;
-  --electric-blue: #7DF9FF;
   --ai-glow: #4DEEEA;
 }
+.prefix-st1{
+  stroke-width: 78;
+}
+
+.prefix-st1, .prefix-st2, prefix-st3, .prefix-st4, .prefix-st5, .prefix-st6, .prefix-st7, .prefix-st8 { 
+  fill:none;
+  stroke:#000000;
+  stroke-miterlimit: 10;
+}
+
 
 /* Existing button styles preserved */
 button,
@@ -224,7 +234,7 @@ button,
 .hero-secondary {
   background: transparent;
   color: var(--ifm-color-primary) !important;
-  border: 2px solid var(--electric-blue);
+  border: 2px solid var(--ifm-color-primary);
   padding: 1rem 1.5rem;
   font-size: 1.125rem;
   border-radius: 12px;
@@ -235,7 +245,7 @@ button,
 }
 
 .hero-secondary:hover {
-  background: var(--electric-blue);
+  background: var(--ifm-color-primary);
   color: var(--ifm-font-color-base) !important;
   transform: translateY(-2px);
   box-shadow: 0 8px 25px rgba(125, 249, 255, 0.3);
@@ -255,7 +265,7 @@ button,
 
 .section-badge {
   display: inline-block;
-  background: linear-gradient(135deg, var(--ifm-color-primary), var(--electric-blue));
+  background: linear-gradient(135deg, var(--ifm-background-color-bt), var(--ifm-color-primary));
   color: white;
   padding: 0.5rem 1rem;
   border-radius: 20px;
@@ -308,7 +318,7 @@ button,
 .vision-item:hover {
   transform: translateY(-5px);
   box-shadow: 0 15px 35px rgba(125, 249, 255, 0.15);
-  border-color: var(--electric-blue);
+  border-color: var(--ifm-color-primary);
 }
 
 .vision-item h3 {
@@ -427,7 +437,7 @@ button,
 .solution-quote blockquote::before {
   content: '"';
   font-size: 4rem;
-  color: var(--electric-blue);
+  color: var(--ifm-color-primary);
   position: absolute;
   left: -2rem;
   top: -1rem;
@@ -465,7 +475,7 @@ button,
 .solution-feature:hover {
   transform: translateY(-8px);
   box-shadow: 0 20px 40px rgba(125, 249, 255, 0.15);
-  border-color: var(--electric-blue);
+  border-color: var(--ifm-color-primary);
 }
 
 .solution-feature h3 {
@@ -590,7 +600,7 @@ button,
   position: absolute;
   top: -15px;
   left: 2rem;
-  background: linear-gradient(135deg, var(--ifm-color-primary), var(--electric-blue));
+  background: linear-gradient(135deg, var(--ifm-background-color-bt), var(--ifm-color-primary));
   color: white;
   width: 40px;
   height: 40px;
@@ -627,7 +637,7 @@ button,
   content: '•';
   position: absolute;
   left: 0;
-  color: var(--electric-blue);
+  color: var(--ifm-color-primary);
   font-weight: bold;
   font-size: 1.2rem;
 }
@@ -668,7 +678,7 @@ button,
 .comparison-header {
   display: grid;
   grid-template-columns: 2fr 1fr 1fr 1fr;
-  background: linear-gradient(135deg, var(--ifm-color-primary), var(--electric-blue));
+  background: linear-gradient(135deg, var(--ifm-background-color-bt), var(--ifm-color-primary));
   color: white;
   justify-content: center;
 }
@@ -778,7 +788,7 @@ button,
 .future-benefit:hover {
   transform: translateY(-8px);
   box-shadow: 0 20px 40px rgba(125, 249, 255, 0.15);
-  border-color: var(--electric-blue);
+  border-color: var(--ifm-color-primary);
 }
 
 .future-benefit span {
@@ -802,7 +812,7 @@ button,
 .future-quote h3 {
   font-size: 2rem;
   font-weight: 700;
-  color: var(--electric-blue);
+  color: var(--ifm-color-primary);
   letter-spacing: -0.01em;
 }
 
